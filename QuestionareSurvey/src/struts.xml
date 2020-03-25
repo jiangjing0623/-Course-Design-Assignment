@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/qiantai/index.jsp</result>
+        </action>
+        
+        
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userEdit" class="userAction" method="userEdit">
+        </action>
+        <action name="userLogin" class="userAction" method="userLogin">
+        </action>
+        <action name="userLogout" class="userAction" method="userLogout">
+             <result name="success">/qiantai/default.jsp</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userXinxi" class="userAction" method="userXinxi">
+             <result name="success">/admin/order/userXinxi.jsp</result>
+        </action>
+        
+        
+        
+         
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminMana" class="adminAction" method="adminMana">
+            <result name="success">/admin/admin/adminMana.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="gonggaoAdd" class="gonggaoAction" method="gonggaoAdd">
+        </action>
+        <action name="gonggaoDel" class="gonggaoAction" method="gonggaoDel">
+        </action>
+        <action name="gonggaoMana" class="gonggaoAction" method="gonggaoMana">
+            <result>/admin/gonggao/gonggaoMana.jsp</result>
+        </action>
+        <action name="gonggaoDetail" class="gonggaoAction" method="gonggaoDetail">
+            <result>/admin/gonggao/gonggaoDetail.jsp</result>
+        </action>
+        <action name="gonggaoDetailQian" class="gonggaoAction" method="gonggaoDetailQian">
+            <result>/qiantai/gonggao/gonggaoDetailQian.jsp</result>
+        </action>
+        <action name="gonggaoQian5" class="gonggaoAction" method="gonggaoQian5">
+            <result>/qiantai/gonggao/gonggaoQian5.jsp</result>
+        </action>
+        
+        
+        <action name="wenjuanAdd" class="wenjuanAction" method="wenjuanAdd">
+        </action>
+        <action name="wenjuanDel" class="wenjuanAction" method="wenjuanDel">
+        </action>
+        <action name="wenjuanMana" class="wenjuanAction" method="wenjuanMana">
+            <result>/admin/wenjuan/wenjuanMana.jsp</result>
+        </action>
+        <action name="wenjuan_search" class="wenjuanAction" method="wenjuan_search">
+            <result>/qiantai/wenjuan/wenjuan_search.jsp</result>
+        </action>
+        <action name="wenjuanDetailQian" class="wenjuanAction" method="wenjuanDetailQian">
+            <result>/qiantai/wenjuan/wenjuanDetailQian.jsp</result>
+        </action>
+        <action name="wenjuan_canyu" class="wenjuanAction" method="wenjuan_canyu">
+        </action>
+        <action name="wenjuan_jieguo" class="wenjuanAction" method="wenjuan_jieguo">
+            <result>/admin/wenjuan/wenjuan_jieguo.jsp</result>
+        </action>
+        
+        
+        <action name="toupiaoAdd" class="toupiaoAction" method="toupiaoAdd">
+        </action>
+        <action name="toupiao_zhutu" class="toupiaoAction" method="toupiao_zhutu">
+            <result>/admin/toupiao/toupiao_zhutu.jsp</result>
+        </action>
+        
+        
+    </package>
+</struts>
